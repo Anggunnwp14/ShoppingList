@@ -200,3 +200,6 @@ fun ShoppingListPreview() {
         }
     }
 }
+
+
+annotation class ShoppingList

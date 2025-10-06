@@ -19,7 +19,11 @@ import androidx.compose.ui.unit.dp
 import com.example.shoppinglist.ui.theme.ShoppingListTheme
 
 @Composable
-fun ItemInput(text: String, onTextChange: (String) -> Unit, onAddItem: () -> Unit) {
+fun ItemInput(
+    text: String,
+    onTextChange: (String) -> Unit,
+    onAddItem: () -> Unit
+) {
     Row(
         modifier = Modifier.fillMaxWidth(),
         verticalAlignment = Alignment.CenterVertically
@@ -47,3 +51,5 @@ fun ItemInputPreview() {
         ItemInput(text = "Milk", onTextChange = {}, onAddItem = {})
     }
 }
+
+annotation class ItemInput
